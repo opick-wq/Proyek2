@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
+  <title>Dino Planet | Form Tambah</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -105,11 +105,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Daftar Montir / Mekanik</h1>
+            <h1 class="m-0">Kelola Montir / Mekanik</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../dashboardAdmin.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
               <li class="breadcrumb-item active">Kelola Montir/Mekanik</li>
             </ol>
           </div><!-- /.col -->
@@ -121,125 +121,88 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
-          <div class="row">
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-success">
-                <div class="inner">
-                  <h3>4</h3>
-  
-                  <p>Tambah Montir</p>
-                </div>
-                <div class="icon">
-                  <i class="fas fa-folder-plus"></i>
-                </div>
-                <a href="form_tambah_kendaraan.html" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- /.row -->
           <!-- Main row -->
           <div class="row">
             <div class="col-12">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nama Mekanik</th>
-                    <th scope="col">Jenis Montir</th>
-                    <th scope="col">pengalaman</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Taman wisata pasir putih</td>
-                    <td>Depok</td>
-                    <td>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye"></i>
-                      <i class="far fa-edit"></i>
-                      <i class="far fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Kebun Raya Bogor</td>
-                    <td>Bogor</td>
-                    <td>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye"></i>
-                      <i class="far fa-edit"></i>
-                      <i class="far fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Trans studio Bandung</td>
-                    <td>Bandung</td>
-                    <td>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye"></i>
-                      <i class="far fa-edit"></i>
-                      <i class="far fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Taman Mekarsari</td>
-                    <td>Depok</td>
-                    <td>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye"></i>
-                      <i class="far fa-edit"></i>
-                      <i class="far fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Mall Metropolitan cibubur</td>
-                    <td>Bogor</td>
-                    <td>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye"></i>
-                      <i class="far fa-edit"></i>
-                      <i class="far fa-trash-alt"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <form>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">Nama Mekanik</label> 
+                      <div class="col-8">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-address-card"></i>
+                            </div>
+                          </div> 
+                          <input id="Nama Mekanik" name="Nama Mekanik" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Kategori" class="col-4 col-form-label">Kategori</label> 
+                      <div class="col-8">
+                        <select id="Kategori" name="Kategori" class="custom-select">
+                          <option value="Senior Mekanik">Senior Mekanik</option>
+                          <option value="Junior Mekanik">Junior Mekanik</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Deskripsi Skill" class="col-4 col-form-label">Deskripsi Skill</label> 
+                      <div class="col-8">
+                        <textarea id="Deskripsi Skill" name="Deskripsi Skill" cols="40" rows="" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-4">Kemampuan</label> 
+                      <div class="col-8">
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input name="Kemampuan" id="Kemampuan_0" type="checkbox" class="custom-control-input" value="Service Ringan"> 
+                          <label for="Kemampuan_0" class="custom-control-label">Service Ringan</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input name="Kemampuan" id="Kemampuan_1" type="checkbox" class="custom-control-input" value="Service Besar"> 
+                          <label for="Kemampuan_1" class="custom-control-label">Service Besar</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input name="Kemampuan" id="Kemampuan_2" type="checkbox" class="custom-control-input" value="Body Repair"> 
+                          <label for="Kemampuan_2" class="custom-control-label">Body Repair</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">Tempat Tanggal Lahir</label> 
+                      <div class="col-2">
+                        <div class="input-group">
+                          <input id="Nama Mekanik" name="Nama Mekanik" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="input-group">
+                          <input type="date">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">No.Telepon</label> 
+                      <div class="col-3">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                          </div> 
+                          <input id="Nama Mekanik" name="Nama Mekanik" type="number" class="form-control">
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="form-group row">
+                      <div class="offset-4 col-1 ">
+                        <button name="submit" type="submit" class="btn btn-warning">Simpan</button>
+                      </div>
+                      <div class="col-7">
+                        <button name="submit" type="reset" class="btn btn-success">Reset</button>
+                      </div>
+                    </div>
+                  </form>
             </div>
           </div>
           <!-- /.row (main row) -->
