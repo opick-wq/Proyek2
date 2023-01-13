@@ -7,3 +7,18 @@
     font-family: font2;
     src: url('../font/Nexa-Trial-Bold.ttf')
 }
+
+@font-face {
+    font-family: font3;
+    src: url('../font/Times\ New\ Romance.ttf')
+}
+
+@font-face {
+    font-family: font4;
+    src: url('../font/HWYGOTH.TTF')
+}
+
+@font-face {
+    font-family: font2;
+    src: url('../font/Comfortaa-Bold.ttf')
+}
