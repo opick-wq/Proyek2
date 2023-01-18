@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
+  <title>Dino Planet | Form Tambah</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -15,11 +15,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-
+  
    <!-- Navbar -->
    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -47,7 +46,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin</a>
+          <a href="#" class="d-block">Alexander Pierce</a>
         </div>
       </div>
 
@@ -118,11 +117,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
+            
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../dashboardAdmin.html">Home</a></li>
-              <li class="breadcrumb-item active">Montir Mekanik</li>
+              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+              <li class="breadcrumb-item active">Kelola Montir Mekanik</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -133,83 +133,107 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
+          <!-- Main row -->
           <div class="card">
             <div class="card-header">
-              <h3>Data Montir / Mekanik</h3>
+              <h3 class="card-title">
+                Kelola Montir / Mekanik
+              </h3>
             </div>
             <div class="card-body table-responsive">
           <div class="row">
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-success">
-                <div class="inner">
-                  <h3>5</h3>
-  
-                  <p>Tambah Montir</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
-                </div>
-                <a href="form_tambah_kendaraan.html" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- /.row -->
-          <!-- Main row -->
-          <div class="row">
             <div class="col-12">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nama Mekanik</th>
-                    <th scope="col">Jenis Montir</th>
-                    <th scope="col">pengalaman</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Ahmad Dian</td>
-                    <td>Senior Mekanik</td>
-                    <td>10 tahun</td>
-                    <td>Detail | Edit | Delete</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Ahmad Dian</td>
-                    <td>Senior Mekanik</td>
-                    <td>10 tahun</td>
-                    <td>Detail | Edit | Delete</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Ahmad Dian</td>
-                    <td>Senior Mekanik</td>
-                    <td>10 tahun</td>
-                    <td>Detail | Edit | Delete</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Ahmad Dian</td>
-                    <td>Senior Mekanik</td>
-                    <td>10 tahun</td>
-                    <td>Detail | Edit | Delete</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Ahmad Dian</td>
-                    <td>Senior Mekanik</td>
-                    <td>10 tahun</td>
-                    <td>Detail | Edit | Delete</td>
-                  </tr>
-                </tbody>
-              </table>
+                <form>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">Nama Mekanik</label> 
+                      <div class="col-8">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa fa-address-card"></i>
+                            </div>
+                          </div> 
+                          <input id="Nama Mekanik" name="Nama Mekanik" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Kategori" class="col-4 col-form-label">Kategori</label> 
+                      <div class="col-8">
+                        <select id="Kategori" name="Kategori" class="custom-select">
+                          <option value="Senior Mekanik">Senior Mekanik</option>
+                          <option value="Junior Mekanik">Junior Mekanik</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Deskripsi Skill" class="col-4 col-form-label">Deskripsi Skill</label> 
+                      <div class="col-8">
+                        <textarea id="Deskripsi Skill" name="Deskripsi Skill" cols="40" rows="" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-4">Kemampuan</label> 
+                      <div class="col-8">
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input name="Kemampuan" id="Kemampuan_0" type="checkbox" class="custom-control-input" value="Service Ringan"> 
+                          <label for="Kemampuan_0" class="custom-control-label">Service Ringan</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input name="Kemampuan" id="Kemampuan_1" type="checkbox" class="custom-control-input" value="Service Besar"> 
+                          <label for="Kemampuan_1" class="custom-control-label">Service Besar</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input name="Kemampuan" id="Kemampuan_2" type="checkbox" class="custom-control-input" value="Body Repair"> 
+                          <label for="Kemampuan_2" class="custom-control-label">Body Repair</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">Tempat Tanggal Lahir</label> 
+                      <div class="col-2">
+                        <div class="input-group">
+                          <input id="Nama Mekanik" name="Nama Mekanik" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="input-group">
+                          <input type="date">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">No.Telepon</label> 
+                      <div class="col-3">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                          </div> 
+                          <input id="Nama Mekanik" name="Nama Mekanik" type="number" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Nama Mekanik" class="col-4 col-form-label">Upload Foto</label>
+                      <div class="col-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                      </div>
+                    </div>  
+                    <div class="form-group row">
+                      <div class="offset-4 col-1 ">
+                        <button name="submit" type="submit" class="btn btn-warning">Simpan</button>
+                      </div>
+                      <div class="col-7">
+                        <button name="submit" type="reset" class="btn btn-success">Reset</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
             </div>
-          </div>
-          </div>
           </div>
           <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->

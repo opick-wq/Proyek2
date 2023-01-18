@@ -49,7 +49,7 @@ document.getElementById('form-validation').addEventListener('submit', function(e
   // jika tidak ada error, tampilkan inputan di bawah form
   if(email =="admin123@gmail.com" && password =="123"){
     alert('Login sukses');
-    location.href = "home.html"
+    location.href = "dashboardAdmin.html"
   }else{
     alert('Login gagal username atau password salah');
 }

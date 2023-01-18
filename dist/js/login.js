@@ -29,7 +29,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     // validasi form disini
     if (fullName === '') {
         errors.push("Full Name tidak boleh kosong");
-         document.getElementById("fullName-error").innerHTML = "Email tidak boleh kosong";
+         document.getElementById("fullName-error").innerHTML = "Full Name tidak boleh kosong";
         
     // Tandai elemen dengan warna merah
          document.getElementById('fullName').style.borderColor = "red";
@@ -45,7 +45,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     if (username === '') {
         errors.push("Email tidak boleh kosong");
-         document.getElementById("username-error").innerHTML = "Email tidak boleh kosong";
+         document.getElementById("username-error").innerHTML = "Username tidak boleh kosong";
         
     // Tandai elemen dengan warna merah
          document.getElementById('username').style.borderColor = "red";
